@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyrBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackBackground"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context="com.gmail.card.mousavi.yahoowheather.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <EditText
+
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Your city name"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/lightText"
+            android:textColorHint="#77ffffff"
+            android:visibility="gone"></EditText>
+
+        <TextView
+            android:id="@+id/txtCity"
+            fontPath="fonts/Lato-Light.ttf"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:textColor="@color/lightText"
+            android:textSize="32sp" />
+
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search" />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/lyrHide"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtRegion"
+            fontPath="fonts/Lato-Light.ttf"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="London"
+            android:textColor="@color/lightText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            fontPath="fonts/OpenSans-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TODAY"
+            android:textColor="@color/lightText"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/w_clear_day" />
+
+        <TextView
+            android:id="@+id/txtNowTemp"
+            fontPath="fonts/Lato-Hairline.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="16°"
+            android:textColor="@color/lightText"
+            android:textSize="92sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/temp_lowest" />
+
+        <TextView
+            android:id="@+id/temp_lowest"
+            fontPath="fonts/Lato-Light.ttf"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:text="100°"
+            android:textColor="@color/lightText"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/temp_highest" />
+
+
+        <TextView
+            android:id="@+id/temp_highest"
+            fontPath="fonts/Lato-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:text="-100°"
+            android:textColor="@color/lightText"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstWeather"
+        android:layout_width="match_parent"
+        android:layout_height="144dp">
+
+    </ListView>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyrTxt"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <TextView
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        fontPath="fonts/Lato-Light.ttf"
+
+        android:text="Search your city"/></LinearLayout>
+</LinearLayout>
