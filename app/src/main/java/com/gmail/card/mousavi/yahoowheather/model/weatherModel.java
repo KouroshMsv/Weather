@@ -5,10 +5,10 @@ package com.gmail.card.mousavi.yahoowheather.model;
  */
 
 public class weatherModel  {
-    String weekday;
-    String highTemp;
-    String lowTemp;
-    int imgResource;
+    public String weekday;
+    public String highTemp;
+    public String lowTemp;
+    public int imgResource;
 
     public weatherModel() {
     }

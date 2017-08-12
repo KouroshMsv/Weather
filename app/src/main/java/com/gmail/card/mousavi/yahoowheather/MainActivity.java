@@ -19,14 +19,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.gmail.card.mousavi.yahoowheather.YahooModel;
 import com.gmail.card.mousavi.yahoowheather.adapters.WeatherAdapter;
 import com.gmail.card.mousavi.yahoowheather.model.DatabaseModel;
 import com.gmail.card.mousavi.yahoowheather.model.weatherModel;
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.TextHttpResponseHandler;
-
+import com.gmail.card.mousavi.yahoowheather.YahooModel;
 import java.util.ArrayList;
 import java.util.List;
 

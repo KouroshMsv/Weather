@@ -8,19 +8,18 @@ import com.orm.SugarRecord;
 
 public class DatabaseModel extends SugarRecord<DatabaseModel> {
 
-    String cityName="", regionName="",code="";
-    String todayTemp="", todayLTemp="", todayHTemp="";
-    String d1HTemp="", d1LTemp="",code1="";
-    String d2HTemp="", d2LTemp="",code2="",nameDay2="";
-    String d3HTemp="", d3LTemp="",code3="",nameDay3="";
-    String d4HTemp="", d4LTemp="",code4="",nameDay4="";
-    String d5HTemp="", d5LTemp="",code5="",nameDay5="";
-    String d6HTemp="", d6LTemp="",code6="",nameDay6="";
-    String d7HTemp="", d7LTemp="",code7="",nameDay7="";
+    public String cityName="", regionName="",code="";
+    public String todayTemp="", todayLTemp="", todayHTemp="";
+    public String d1HTemp="", d1LTemp="",code1="";
+    public String d2HTemp="", d2LTemp="",code2="",nameDay2="";
+    public String d3HTemp="", d3LTemp="",code3="",nameDay3="";
+    public String d4HTemp="", d4LTemp="",code4="",nameDay4="";
+    public String d5HTemp="", d5LTemp="",code5="",nameDay5="";
+    public String d6HTemp="", d6LTemp="",code6="",nameDay6="";
+    public String d7HTemp="", d7LTemp="",code7="",nameDay7="";
 
 
     public DatabaseModel() {
-
     }
 
     public String getCityName() {
